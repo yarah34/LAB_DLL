@@ -4,10 +4,13 @@
 
 using namespace std;
 
+
 int main()
 {
     setlocale(0, "");
-    wcout << MyName() << endl;
+    wchar_t* Name = new wchar_t[80];
+    MyName(Name);
+    wcout << Name << endl;
     cout << NumberOfGroup() << endl;
     system("pause");
 

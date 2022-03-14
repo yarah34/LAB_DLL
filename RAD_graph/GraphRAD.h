@@ -28,6 +28,6 @@ extern PACKAGE TForm1 *Form1;
 #endif
 
 typedef int (__stdcall * PGrouppa) (void);
-typedef wchar_t* (__stdcall * PImya) (void);
+typedef void (__stdcall * PImya) (wchar_t*);
 
 

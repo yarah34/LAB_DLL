@@ -6,9 +6,7 @@ int __stdcall NumberOfGroup()
 	return 571227;
 }
 
-static wchar_t Name[] = L"Парфилова Мария";
-
-wchar_t * __stdcall MyName()
+void  __stdcall MyName(wchar_t* Name)
 {
-	return Name;
+	wcscpy(Name, L"Мария Парфилова");
 }

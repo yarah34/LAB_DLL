@@ -5,9 +5,8 @@ int __stdcall Grouppa()
 	return 571227;
 }
 
-static wchar_t StName[] = L"Парфилова Мария";
 
-wchar_t * __stdcall Imya()
+void __stdcall Imya(wchar_t * StName)
 {
-	return StName;
+	wcscpy(StName, L"Мария Парфилова");
 }

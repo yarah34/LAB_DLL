@@ -9,4 +9,4 @@
 
 extern "C" LIBRARY_API int __stdcall NumberOfGroup();
 
-extern "C" LIBRARY_API wchar_t * __stdcall MyName();
+extern "C" LIBRARY_API void __stdcall MyName(wchar_t* Name);

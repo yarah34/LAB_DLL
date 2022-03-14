@@ -39,6 +39,7 @@ void __fastcall TForm1::Button1Click(TObject *Sender)
 
 void __fastcall TForm1::Button2Click(TObject *Sender)
 {
+	wchar_t *StName = new wchar_t[80];
 
 	HINSTANCE hMyDll = LoadLibraryW(L"RadDll");
 	if (hMyDll == NULL) {
@@ -52,7 +53,8 @@ void __fastcall TForm1::Button2Click(TObject *Sender)
 		ShowMessage("Imya isn't found");
 	}
 	else {
-		Form1->Label3->Caption = Imya();
+		Imya(StName);
+		Form1->Label3->Caption = StName;
 	}
 
 	FreeLibrary(hMyDll);

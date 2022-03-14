@@ -5,4 +5,4 @@
 #endif
 
 extern "C" LIBRARY_API int __stdcall Grouppa();
-extern "C" LIBRARY_API wchar_t* __stdcall Imya();
+extern "C" LIBRARY_API void __stdcall Imya(wchar_t* StName);
