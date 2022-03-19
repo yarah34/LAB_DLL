@@ -70,7 +70,7 @@ object Form1: TForm1
     Width = 282
     Height = 41
     Caption = #1055#1086#1083#1091#1095#1080#1090#1100' '#1080#1084#1103', '#1092#1072#1084#1080#1083#1080#1102' '#1089#1090#1091#1076#1077#1085#1090#1072
-    Font.Charset = DEFAULT_CHARSET
+    Font.Charset = SYMBOL_CHARSET
     Font.Color = clWindowText
     Font.Height = -15
     Font.Name = 'Segoe UI Black'
