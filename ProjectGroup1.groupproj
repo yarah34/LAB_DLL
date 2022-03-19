@@ -1,0 +1,60 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{B60F09EF-ABA0-4765-B885-18FC5C94865C}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="RAD_dll\RadDll.cbproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="RAD_cons\RadConsole.cbproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="RAD_graph\GraphRADProj.cbproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="RadDll">
+        <MSBuild Projects="RAD_dll\RadDll.cbproj"/>
+    </Target>
+    <Target Name="RadDll:Clean">
+        <MSBuild Projects="RAD_dll\RadDll.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="RadDll:Make">
+        <MSBuild Projects="RAD_dll\RadDll.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="RadConsole">
+        <MSBuild Projects="RAD_cons\RadConsole.cbproj"/>
+    </Target>
+    <Target Name="RadConsole:Clean">
+        <MSBuild Projects="RAD_cons\RadConsole.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="RadConsole:Make">
+        <MSBuild Projects="RAD_cons\RadConsole.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="GraphRADProj">
+        <MSBuild Projects="RAD_graph\GraphRADProj.cbproj"/>
+    </Target>
+    <Target Name="GraphRADProj:Clean">
+        <MSBuild Projects="RAD_graph\GraphRADProj.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="GraphRADProj:Make">
+        <MSBuild Projects="RAD_graph\GraphRADProj.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="RadDll;RadConsole;GraphRADProj"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="RadDll:Clean;RadConsole:Clean;GraphRADProj:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="RadDll:Make;RadConsole:Make;GraphRADProj:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>
