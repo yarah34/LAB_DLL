@@ -19,7 +19,7 @@ object Form1: TForm1
     Height = 25
     Caption = #1055#1086#1076#1082#1083#1102#1095#1077#1085#1080#1077' DLL '#1076#1080#1085#1072#1084#1080#1095#1077#1089#1082#1080
     Font.Charset = DEFAULT_CHARSET
-    Font.Color = clWindowText
+    Font.Color = clHotLight
     Font.Height = 25
     Font.Name = 'Segoe UI Black'
     Font.Style = []
@@ -58,7 +58,7 @@ object Form1: TForm1
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -15
-    Font.Name = 'Segoe UI Black'
+    Font.Name = 'JetBrains Mono NL ExtraBold'
     Font.Style = []
     ParentFont = False
     TabOrder = 0
@@ -70,11 +70,11 @@ object Form1: TForm1
     Width = 282
     Height = 41
     Caption = #1055#1086#1083#1091#1095#1080#1090#1100' '#1080#1084#1103', '#1092#1072#1084#1080#1083#1080#1102' '#1089#1090#1091#1076#1077#1085#1090#1072
-    Font.Charset = DEFAULT_CHARSET
-    Font.Color = clWindowText
+    Font.Charset = EASTEUROPE_CHARSET
+    Font.Color = clGrayText
     Font.Height = -15
-    Font.Name = 'Segoe UI Black'
-    Font.Style = []
+    Font.Name = 'Microsoft JhengHei UI'
+    Font.Style = [fsBold]
     ParentFont = False
     TabOrder = 1
     OnClick = Button2Click
