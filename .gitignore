@@ -1,4 +1,5 @@
 *.local
+*.stat
 RAD_cons/Win32/
 RAD_cons/*.local
 RAD_cons/__astcache/
@@ -21,3 +22,8 @@ VisualDLL/VisualDLL/Release/
 VisualProject/Release/
 VisualProject/.vs/
 VisualProject/VisualProject/Release/
+VirtualTreeView/Win32/
+VirtualTreeView/*.local
+VirtualTreeView/__astcache/
+VirtualTreeView/__history/
+VirtualTreeView/__recovery/
