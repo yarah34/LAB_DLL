@@ -25,7 +25,7 @@ void writeTable(sqlite3* Database)
 	setlocale(LC_ALL, "Russian");
 
 	// Открываем базу данных:
-	int openResult = sqlite3_open16(L"C:\\Users\\1\\Documents\\Embarcadero\\Studio\\Projects\\VirtualTreeView\\db_sqlite.db", &Database);
+	int openResult = sqlite3_open16(L".\\db_sqlite.db", &Database);
 	/* Database filename (UTF-16) */
 
 	// В случае нормального открытия возвращается 0.
@@ -78,7 +78,7 @@ void __fastcall TForm1::ЗаполнитьClick(TObject *Sender)
 	sqlite3* Database;
 
 	// Открываем базу данных:
-	int openResult = sqlite3_open16(L"C:\\Users\\1\\Documents\\Embarcadero\\Studio\\Projects\\VirtualTreeView\\db_sqlite.db", &Database);
+	int openResult = sqlite3_open16(L".\\db_sqlite.db", &Database);
 	/* Database filename (UTF-16) */
 
 	// В случае нормального открытия возвращается 0.
@@ -172,7 +172,7 @@ void __fastcall TForm1::Button1Click(TObject *Sender)
 	sqlite3* Database;
 
 	// Открываем базу данных:
-	int openResult = sqlite3_open16(L"C:\\Users\\1\\Documents\\Embarcadero\\Studio\\Projects\\VirtualTreeView\\db_sqlite.db", &Database);
+	int openResult = sqlite3_open16(L".\\db_sqlite.db", &Database);
 	/* Database filename (UTF-16) */
 	// В случае нормального открытия возвращается 0.
 
@@ -231,7 +231,7 @@ void __fastcall TForm1::Button2Click(TObject *Sender)
 	sqlite3* Database;
 
     // Открываем базу данных:
-	int openResult = sqlite3_open16(L"C:\\Users\\1\\Documents\\Embarcadero\\Studio\\Projects\\VirtualTreeView\\db_sqlite.db", &Database);
+	int openResult = sqlite3_open16(L".\\db_sqlite.db", &Database);
 	/* Database filename (UTF-16) */
 
 	// В случае нормального открытия возвращается 0.
