@@ -27,3 +27,8 @@ VirtualTreeView/*.local
 VirtualTreeView/__astcache/
 VirtualTreeView/__history/
 VirtualTreeView/__recovery/
+mnogopotoc/Win32/
+mnogopotoc/*.local
+mnogopotoc/__astcache/
+mnogopotoc/__history/
+mnogopotoc/__recovery/
