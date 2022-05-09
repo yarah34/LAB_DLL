@@ -32,3 +32,8 @@ mnogopotoc/*.local
 mnogopotoc/__astcache/
 mnogopotoc/__history/
 mnogopotoc/__recovery/
+difftimeWorkNew/Win32/
+difftimeWorkNew/*.local
+difftimeWorkNew/__astcache/
+difftimeWorkNew/__history/
+difftimeWorkNew/__recovery/
